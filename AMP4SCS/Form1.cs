@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Resources;
 using System.Text;
@@ -17,8 +18,11 @@ namespace AdvancedETS2Packer
 
         public Form1()
         {
+            // set language
+            Languages.CultureGenerator.SetCultureFromProperties();
+
             // verify, if exists settings
-            if (Properties.Settings.Default.SevenZip_path == "")
+            if (Properties.Settings.Default.SevenZip_path == "" || File.Exists(Properties.Settings.Default.SevenZip_path) == false)
             {
                 Options options = new Options();
                 options.ShowDialog();
@@ -26,24 +30,13 @@ namespace AdvancedETS2Packer
                 // Was set? No? Then exit application!
                 if (Properties.Settings.Default.SevenZip_path == "")
                 {
+                    MessageBox.Show("7z not selected, app will close.", "7z not selected", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     Environment.Exit(0);
                 }
             }
 
             // set language
-            string language = "en-US";
-            switch (Properties.Settings.Default.Language)
-            {
-                case 0:
-                    language = "cs-CZ";
-                    break;
-
-                case 2:
-                    language = "de-DE";
-                    break;
-            }
-
-            System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(language);
+            Languages.CultureGenerator.SetCultureFromProperties();
 
             InitializeComponent();
             UpdateFormLanguage();

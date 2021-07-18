@@ -19,11 +19,11 @@ namespace AdvancedETS2Packer
 
             // load settings
             txt7Zip.Text = Properties.Settings.Default.SevenZip_path;
-            
+
             if (Properties.Settings.Default.Language < 0)
             {
                 // default is english
-                cmbBoxLang.SelectedIndex = 1;
+                cmbBoxLang.SelectedIndex = 0;
             } else
             {
                 // select selected language
@@ -48,19 +48,7 @@ namespace AdvancedETS2Packer
             Properties.Settings.Default.Save();
 
             // set language
-            string language = "en-US";
-            switch (Properties.Settings.Default.Language)
-            {
-                case 0:
-                    language = "cs-CZ";
-                    break;
-
-                case 2:
-                    language = "de-DE";
-                    break;
-            }
-
-            System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(language);
+            Languages.CultureGenerator.SetCultureFromProperties();
 
             // close this form
             this.Close();
@@ -77,11 +65,6 @@ namespace AdvancedETS2Packer
             {
                 txt7Zip.Text = openFileDialog1.FileName;
             }
-        }
-
-        private void Options_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

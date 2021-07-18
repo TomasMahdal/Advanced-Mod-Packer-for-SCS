@@ -61,8 +61,8 @@ namespace AdvancedETS2Packer
             this.cmbBoxLang.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBoxLang.FormattingEnabled = true;
             this.cmbBoxLang.Items.AddRange(new object[] {
-            "Čeština",
-            "English"});
+            "English",
+            "Čeština"});
             this.cmbBoxLang.Location = new System.Drawing.Point(6, 34);
             this.cmbBoxLang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbBoxLang.Name = "cmbBoxLang";
@@ -162,7 +162,6 @@ namespace AdvancedETS2Packer
             this.MinimizeBox = false;
             this.Name = "Options";
             this.Text = "Nastavení";
-            this.Load += new System.EventHandler(this.Options_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
