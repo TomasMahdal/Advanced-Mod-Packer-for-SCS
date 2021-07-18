@@ -10,7 +10,7 @@ This tool aims to automate the final steps before you publish your mod. It can p
 
 ## Usage
 
-This tool is template based and requires your mod files in folders, not archives. All templates are normal `.txt` files, valid example below:
+This tool is template based and requires your mod files in folders, not archives. All templates are normal `.txt` files and belong in the `templates` folder (on the same level as .exe), valid example below:
 <pre>
 [pack_thingamajig]
 group="DBus Vehicles"
