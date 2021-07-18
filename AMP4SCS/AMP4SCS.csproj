@@ -4,7 +4,7 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net5.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
-    <AssemblyName>AdvancedETS2Packer</AssemblyName>
+    <AssemblyName>AdvancedModPackerforSCS Games</AssemblyName>
     <RootNamespace>AdvancedETS2Packer</RootNamespace>
   </PropertyGroup>
 
