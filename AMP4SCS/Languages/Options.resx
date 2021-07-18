@@ -124,10 +124,10 @@
     <value>Language</value>
   </data>
   <data name="languageOfApp" xml:space="preserve">
-    <value>Language of application:</value>
+    <value>Application language:</value>
   </data>
   <data name="PathToConsole7zip" xml:space="preserve">
-    <value>Path to console version of 7zip:</value>
+    <value>Path to the console version of 7zip:</value>
   </data>
   <data name="Save" xml:space="preserve">
     <value>Save</value>

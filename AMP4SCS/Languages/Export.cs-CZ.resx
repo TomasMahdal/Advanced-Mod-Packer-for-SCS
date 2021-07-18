@@ -118,13 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ErrorInPackingNonSteam" xml:space="preserve">
-    <value>Chyba při vytváření non Steam verze</value>
+    <value>Chyba při vytváření neSteamové verze</value>
   </data>
   <data name="Folder" xml:space="preserve">
     <value>Složka</value>
   </data>
   <data name="FolderInTemplateNotExists" xml:space="preserve">
-    <value>Složka z templatu neexistuje!</value>
+    <value>Složka uvedená v templatu neexistuje!</value>
   </data>
   <data name="ManifestNotFound" xml:space="preserve">
     <value>Manifest nebyl nazelen! Mód nemusí fungovat správně.</value>
@@ -132,10 +132,16 @@
   <data name="NotFound" xml:space="preserve">
     <value>nenalezena</value>
   </data>
+  <data name="PackagingGroupCompleted" xml:space="preserve">
+    <value>Zabalení skupiny módů proběhlo úspěšně!</value>
+  </data>
   <data name="PackingCompleted" xml:space="preserve">
     <value>Zabalení módu probehlo úspěšně!</value>
   </data>
   <data name="PackingCompleted2" xml:space="preserve">
     <value>Zabalení módu {0} proběhlo úspěšně! Pro více informací můžete prohlédnout log ve složce s programem.</value>
+  </data>
+  <data name="PackingGroupCompleted2" xml:space="preserve">
+    <value>Zabalení skupiny módů {0} proběhlo úspěšně! Pro více informací můžete prohlédnout log ve složce s programem.</value>
   </data>
 </root>

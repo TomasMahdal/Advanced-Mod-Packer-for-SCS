@@ -124,7 +124,7 @@
     <value>Export group of mods</value>
   </data>
   <data name="exportMod" xml:space="preserve">
-    <value>Export mod</value>
+    <value>Export single mod</value>
   </data>
   <data name="exportMod2" xml:space="preserve">
     <value>Export mod</value>

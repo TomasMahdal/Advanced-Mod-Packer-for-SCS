@@ -124,7 +124,7 @@
     <value>Exportovat skupinu módů</value>
   </data>
   <data name="exportMod" xml:space="preserve">
-    <value>Export módů</value>
+    <value>Export jednotlivých módů</value>
   </data>
   <data name="exportMod2" xml:space="preserve">
     <value>Exportovat mód</value>

@@ -118,16 +118,16 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ErrorInPackingNonSteam" xml:space="preserve">
-    <value>Error in packing non Steam version.</value>
+    <value>Error in packing non-Steam version.</value>
   </data>
   <data name="Folder" xml:space="preserve">
     <value>Folder</value>
   </data>
   <data name="FolderInTemplateNotExists" xml:space="preserve">
-    <value>Folder, that is in template does not exists!</value>
+    <value>Folder mentioned in the template does not exists!</value>
   </data>
   <data name="ManifestNotFound" xml:space="preserve">
-    <value>Manifest of mod was not found, mod don't have to work correctly.</value>
+    <value>Mod manifest was not found, mod might not work properly.</value>
   </data>
   <data name="NotFound" xml:space="preserve">
     <value>not found</value>
@@ -136,6 +136,12 @@
     <value>Packing completed successfully!</value>
   </data>
   <data name="PackingCompleted2" xml:space="preserve">
-    <value>Packing of mod {0} was completed successfully! For other informations, you can look into logfiles in program folder.</value>
+    <value>Packing of mod {0} was completed successfully! For other informations, you can look into logfiles in the program folder.</value>
+  </data>
+  <data name="PackingGroupCompleted" xml:space="preserve">
+    <value>Packing completed successfully!</value>
+  </data>
+  <data name="PackingGroupCompleted2" xml:space="preserve">
+    <value>Packing of group of mods {0} was completed successfully! For other informations, you can look into logfiles in the program folder.</value>
   </data>
 </root>

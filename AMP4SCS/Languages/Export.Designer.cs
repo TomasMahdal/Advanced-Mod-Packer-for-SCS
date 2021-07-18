@@ -61,7 +61,7 @@ namespace AdvancedETS2Packer.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Error in packing non Steam version..
+        ///   Looks up a localized string similar to Error in packing non-Steam version..
         /// </summary>
         internal static string ErrorInPackingNonSteam {
             get {
@@ -79,7 +79,7 @@ namespace AdvancedETS2Packer.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Folder, that is in template does not exists!.
+        ///   Looks up a localized string similar to Folder mentioned in the template does not exists!.
         /// </summary>
         internal static string FolderInTemplateNotExists {
             get {
@@ -88,7 +88,7 @@ namespace AdvancedETS2Packer.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Manifest of mod was not found, mod don&apos;t have to work correctly..
+        ///   Looks up a localized string similar to Mod manifest was not found, mod might not work properly..
         /// </summary>
         internal static string ManifestNotFound {
             get {
@@ -115,11 +115,29 @@ namespace AdvancedETS2Packer.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Packing of mod {0} was completed successfully! For other informations, you can look into logfiles in program folder..
+        ///   Looks up a localized string similar to Packing of mod {0} was completed successfully! For other informations, you can look into logfiles in the program folder..
         /// </summary>
         internal static string PackingCompleted2 {
             get {
                 return ResourceManager.GetString("PackingCompleted2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Packing completed successfully!.
+        /// </summary>
+        internal static string PackingGroupCompleted {
+            get {
+                return ResourceManager.GetString("PackingGroupCompleted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Packing of group of mods {0} was completed successfully! For other informations, you can look into logfiles in the program folder..
+        /// </summary>
+        internal static string PackingGroupCompleted2 {
+            get {
+                return ResourceManager.GetString("PackingGroupCompleted2", resourceCulture);
             }
         }
     }

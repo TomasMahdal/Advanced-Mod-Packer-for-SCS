@@ -36,7 +36,7 @@ namespace AdvancedETS2Packer
             }
         }
 
-        public void ExportMod(string templateName)
+        public void ExportMod(string templateName, bool silentPackaging = false)
         {
             // clear folder
             if (Directory.Exists(Environment.CurrentDirectory + "\\_cache\\")) {
@@ -123,7 +123,9 @@ namespace AdvancedETS2Packer
                     proccess.WaitForExit();
                 }
 
-                MessageBox.Show(string.Format(LocRM.GetString("PackingCompleted2"), template.Name), LocRM.GetString("PackingCompleted"), MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (silentPackaging == false) {
+                    MessageBox.Show(string.Format(LocRM.GetString("PackingCompleted2"), template.Name), LocRM.GetString("PackingCompleted"), MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
         }
 
@@ -133,9 +135,11 @@ namespace AdvancedETS2Packer
             {
                 if (temp.Group == groupName)
                 {
-                    ExportMod(temp.Name);
+                    ExportMod(temp.Name, true);
                 }
             }
+
+            MessageBox.Show(string.Format(LocRM.GetString("PackingGroupCompleted2"), groupName), LocRM.GetString("PackingGroupCompleted"), MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private static void DirectoryCopy(string sourceDirName, string destDirName, bool copySubDirs)
