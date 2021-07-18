@@ -117,6 +117,18 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="dialog_Cleanup" xml:space="preserve">
+    <value>Cleaning cache...</value>
+  </data>
+  <data name="dialog_Copyiing" xml:space="preserve">
+    <value>Copying mod files...</value>
+  </data>
+  <data name="dialog_PackagingNonSteam" xml:space="preserve">
+    <value>Packaging non Steam version of mod...</value>
+  </data>
+  <data name="dialog_PackagingSteam" xml:space="preserve">
+    <value>Packaging Steam version of mod...</value>
+  </data>
   <data name="ErrorInPackingNonSteam" xml:space="preserve">
     <value>Error in packing non-Steam version.</value>
   </data>
@@ -131,6 +143,9 @@
   </data>
   <data name="NotFound" xml:space="preserve">
     <value>not found</value>
+  </data>
+  <data name="Packaging..." xml:space="preserve">
+    <value>Packaging...</value>
   </data>
   <data name="PackingCompleted" xml:space="preserve">
     <value>Packing completed successfully!</value>

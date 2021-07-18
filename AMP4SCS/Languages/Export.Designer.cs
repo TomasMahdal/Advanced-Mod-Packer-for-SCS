@@ -61,6 +61,42 @@ namespace AdvancedETS2Packer.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Cleaning cache....
+        /// </summary>
+        internal static string dialog_Cleanup {
+            get {
+                return ResourceManager.GetString("dialog_Cleanup", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Copying mod files....
+        /// </summary>
+        internal static string dialog_Copyiing {
+            get {
+                return ResourceManager.GetString("dialog_Copyiing", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Packaging non Steam version of mod....
+        /// </summary>
+        internal static string dialog_PackagingNonSteam {
+            get {
+                return ResourceManager.GetString("dialog_PackagingNonSteam", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Packaging Steam version of mod....
+        /// </summary>
+        internal static string dialog_PackagingSteam {
+            get {
+                return ResourceManager.GetString("dialog_PackagingSteam", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Error in packing non-Steam version..
         /// </summary>
         internal static string ErrorInPackingNonSteam {
@@ -102,6 +138,15 @@ namespace AdvancedETS2Packer.Languages {
         internal static string NotFound {
             get {
                 return ResourceManager.GetString("NotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Packaging....
+        /// </summary>
+        internal static string Packaging___ {
+            get {
+                return ResourceManager.GetString("Packaging...", resourceCulture);
             }
         }
         
