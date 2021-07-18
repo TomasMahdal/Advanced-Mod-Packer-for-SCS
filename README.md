@@ -6,11 +6,11 @@ This tool aims to automate the final steps before you publish your mod. It can p
 
 ## Requirements:
 * [.NET 5.0](https://dotnet.microsoft.com/download/dotnet/5.0)
-* [Console version of 7zip, included in the default installation](https://www.7-zip.org/)
+* [7zip](https://www.7-zip.org/)
 
 ## Usage
 
-This tool is template based and requires your mod files in folders, not archives. All templates are normal `.txt` files, valid example below:
+This tool is template based and requires your mod files in folders, not archives. All templates are normal `.txt` files and belong in the `templates` folder (on the same level as .exe), valid example below:
 <pre>
 [pack_thingamajig]
 group="DBus Vehicles"
