@@ -146,7 +146,7 @@ namespace AdvancedETS2Packer
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
-            this.openFileDialog1.Filter = "7zip console app|7zG.exe";
+            this.openFileDialog1.Filter = "7zip console app|7z.exe";
             // 
             // Options
             // 

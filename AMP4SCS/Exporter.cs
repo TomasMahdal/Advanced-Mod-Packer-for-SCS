@@ -25,14 +25,21 @@ namespace AdvancedETS2Packer
 
             Templates = new List<Template>();
             DirectoryInfo d = new DirectoryInfo(Environment.CurrentDirectory + "\\templates\\");
-            foreach (var file in d.GetFiles("*.txt"))
-            {
-                Template temp = new Template();
-                temp.LoadFromString(File.ReadAllText(file.FullName, Encoding.UTF8));
+            if (d.Exists) {
+                // if directory exists, load mods
+                foreach (var file in d.GetFiles("*.txt"))
+                {
+                    Template temp = new Template();
+                    temp.LoadFromString(File.ReadAllText(file.FullName, Encoding.UTF8));
 
-                if (temp.Error == false) {
-                    Templates.Add(temp);
+                    if (temp.Error == false) {
+                        Templates.Add(temp);
+                    }
                 }
+            } else
+            {
+                // if directory does not exists, create it
+                d.Create();
             }
         }
 
@@ -80,6 +87,7 @@ namespace AdvancedETS2Packer
                     bat = bat.Replace("%cache%", Environment.CurrentDirectory + "\\_cache\\data\\");
                     bat = bat.Replace("%7z%", Properties.Settings.Default.SevenZip_path);
                     bat = bat.Replace("%export%", template.SteamPath + "\\" + template.ZipName + "_s.zip");
+                    bat = bat.Replace("%modname%", template.Name);
                     bat = bat.Replace("%steam%", "");
                     bat = bat.Replace("%logpath%", Environment.CurrentDirectory + "\\log_Steam.txt");
                     File.WriteAllText(Environment.CurrentDirectory + "\\_cache\\pack.bat", bat);
@@ -112,6 +120,7 @@ namespace AdvancedETS2Packer
                     bat = bat.Replace("%cache%", Environment.CurrentDirectory + "\\_cache\\data\\");
                     bat = bat.Replace("%7z%", Properties.Settings.Default.SevenZip_path);
                     bat = bat.Replace("%export%", template.NonSteamPath + "\\" + template.ZipName + ".zip");
+                    bat = bat.Replace("%modname%", template.Name);
                     bat = bat.Replace("%steam%", "non ");
                     bat = bat.Replace("%logpath%", Environment.CurrentDirectory + "\\log_nonSteam.txt");
                     File.WriteAllText(Environment.CurrentDirectory + "\\_cache\\pack.bat", bat);
@@ -195,6 +204,20 @@ namespace AdvancedETS2Packer
             return stringBuilder.ToString().Normalize(NormalizationForm.FormC);
         }
 
+        public void ClearLogs()
+        {
+            // remove Steam logs
+            if (File.Exists(Environment.CurrentDirectory + "\\log_Steam.txt"))
+            {
+                File.Delete(Environment.CurrentDirectory + "\\log_Steam.txt");
+            }
+
+            // remove non Steam logs
+            if (File.Exists(Environment.CurrentDirectory + "\\log_nonSteam.txt"))
+            {
+                File.Delete(Environment.CurrentDirectory + "\\log_nonSteam.txt");
+            }
+        }
     }
 }
  

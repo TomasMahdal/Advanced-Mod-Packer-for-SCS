@@ -4,11 +4,12 @@ cd "%cache%"
 
 del "%export%"
 
-echo ================================= > %logpath%
-echo Advanced ETS2 Packer >> %logpath%
+echo ================================= >> %logpath%
+echo Advanced Mod Packer for SCS Games >> %logpath%
 echo %date% %time% >> %logpath%
+echo Now packing mod "%modname%"!  >> %logpath%
 echo ================================= >> %logpath%
 
-"%7z%" a -tzip "%export%" * >> %logpath%
-"%7z%" a -tzip -mx0 "%export%" *.ogg -r >> %logpath%
-"%7z%" a -tzip -mx0 "%export%" *.bank -r >> %logpath%
+"%7z%" a -tzip "%export%" * -bb >> %logpath%
+"%7z%" a -tzip -mx0 "%export%" *.ogg -r -bb >> %logpath%
+"%7z%" a -tzip -mx0 "%export%" *.bank -r -bb >> %logpath%

@@ -75,6 +75,7 @@ namespace AdvancedETS2Packer
         {
             if (listbox_mods.SelectedItem != null)
             {
+                exporter.ClearLogs();
                 exporter.ExportMod(listbox_mods.SelectedItem.ToString());
             }
         }
@@ -83,6 +84,7 @@ namespace AdvancedETS2Packer
         {
             if (listbox_mods_groups.SelectedItem != null)
             {
+                exporter.ClearLogs();
                 exporter.ExportGroup(listbox_mods_groups.SelectedItem.ToString());
             }
         }
