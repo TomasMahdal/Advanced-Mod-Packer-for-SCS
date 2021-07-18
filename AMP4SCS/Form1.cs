@@ -50,20 +50,23 @@ namespace AdvancedETS2Packer
                 // load mods
                 listbox_mods.Items.Add(template.Name);
 
-                // verify, if there is not group with this name
-                // if isn't, then add this group as new
-                bool IsThere = false;
-                foreach(string item in listbox_mods_groups.Items)
-                {
-                    if (item == template.Group)
+                // only if mod has group
+                if (template.Group != null && template.Group != "") {
+                    // verify, if there is not group with this name
+                    // if isn't, then add this group as new
+                    bool IsThere = false;
+                    foreach(string item in listbox_mods_groups.Items)
                     {
-                        IsThere = true;
+                        if (item == template.Group)
+                        {
+                            IsThere = true;
+                        }
                     }
-                }
 
-                if (IsThere == false)
-                {
-                    listbox_mods_groups.Items.Add(template.Group);
+                    if (IsThere == false)
+                    {
+                        listbox_mods_groups.Items.Add(template.Group);
+                    }
                 }
             }
         }
