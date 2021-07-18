@@ -143,7 +143,7 @@ namespace AdvancedETS2Packer
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "Advanced ETS2 Mod Packer";
+            this.Text = "Advanced Mod Packer for SCS Games";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -28,6 +29,16 @@ namespace AdvancedETS2Packer
             string about = reader.ReadToEnd();
 
             txtAbout.Text = about;
+        }
+
+        private void txtAbout_LinkClicked(object sender, LinkClickedEventArgs e)
+        {
+            var ps = new ProcessStartInfo(e.LinkText)
+            {
+                UseShellExecute = true,
+                Verb = "open"
+            };
+            Process.Start(ps);
         }
     }
 }

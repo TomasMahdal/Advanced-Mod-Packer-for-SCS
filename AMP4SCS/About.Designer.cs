@@ -37,12 +37,13 @@ namespace AdvancedETS2Packer
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(58, 9);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(13, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(301, 40);
+            this.label1.Size = new System.Drawing.Size(401, 30);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Advanced ETS2 Packer";
+            this.label1.Text = "Advanced Mod Packer for SCS Games";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblVersion
             // 
@@ -61,6 +62,7 @@ namespace AdvancedETS2Packer
             this.txtAbout.Size = new System.Drawing.Size(401, 180);
             this.txtAbout.TabIndex = 2;
             this.txtAbout.Text = "";
+            this.txtAbout.LinkClicked += this.txtAbout_LinkClicked;
             // 
             // About
             // 
