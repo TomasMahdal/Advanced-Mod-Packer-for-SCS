@@ -30,11 +30,44 @@ namespace AdvancedETS2Packer
                 // if directory exists, load mods
                 foreach (var file in d.GetFiles("*.txt"))
                 {
-                    Template temp = new Template();
-                    temp.LoadFromString(File.ReadAllText(file.FullName, Encoding.UTF8));
+                    // load template string from file
+                    string content = File.ReadAllText(file.FullName, Encoding.UTF8);
 
-                    if (temp.Error == false) {
-                        Templates.Add(temp);
+                    // verify, if it is template
+                    if (content.Contains("[pack_thingamajig]")) { 
+                        // split it to more templates, if are there more templates in file
+                        List<string> templates = content.Split("[pack_thingamajig]").ToList();
+
+                        // clean empty templates
+                        for (int i = templates.Count - 1; i > -1; i--)
+                        {
+                            bool isEmpty = true;
+                            var lines = templates[i].Split(Environment.NewLine);
+                            foreach (string line in lines)
+                            {
+                                if (line.Length > 0)
+                                {
+                                    isEmpty = false;
+                                }
+                            }
+
+                            if (isEmpty)
+                            {
+                                templates.RemoveAt(i);
+                            }
+                        }
+
+                        // load templates
+                        foreach (string template in templates)
+                        {
+                            Template temp = new Template();
+                            temp.LoadFromString(template);
+
+                            if (temp.Error == false)
+                            {
+                                Templates.Add(temp);
+                            }
+                        }
                     }
                 }
             } else
