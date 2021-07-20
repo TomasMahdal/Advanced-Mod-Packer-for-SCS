@@ -124,19 +124,19 @@
     <value>Copying mod files...</value>
   </data>
   <data name="dialog_PackagingNonSteam" xml:space="preserve">
-    <value>Packaging non Steam version of mod...</value>
+    <value>Working on the non-Steam version...</value>
   </data>
   <data name="dialog_PackagingSteam" xml:space="preserve">
-    <value>Packaging Steam version of mod...</value>
+    <value>Working on the Steam version...</value>
   </data>
   <data name="ErrorInPackingNonSteam" xml:space="preserve">
-    <value>Error in packing non-Steam version.</value>
+    <value>Error in packing the non-Steam version.</value>
   </data>
   <data name="Folder" xml:space="preserve">
     <value>Folder</value>
   </data>
   <data name="FolderInTemplateNotExists" xml:space="preserve">
-    <value>Folder mentioned in the template does not exists!</value>
+    <value>Folder mentioned in the template does not exist!</value>
   </data>
   <data name="ManifestNotFound" xml:space="preserve">
     <value>Mod manifest was not found, mod might not work properly.</value>
@@ -145,18 +145,18 @@
     <value>not found</value>
   </data>
   <data name="Packaging..." xml:space="preserve">
-    <value>Packaging...</value>
+    <value>Packing...</value>
   </data>
   <data name="PackingCompleted" xml:space="preserve">
     <value>Packing completed successfully!</value>
   </data>
   <data name="PackingCompleted2" xml:space="preserve">
-    <value>Packing of mod {0} was completed successfully! For other informations, you can look into logfiles in the program folder.</value>
+    <value>Packing of mod {0} was completed successfully! More information can be found in the log, located in the program folder.</value>
   </data>
   <data name="PackingGroupCompleted" xml:space="preserve">
     <value>Packing completed successfully!</value>
   </data>
   <data name="PackingGroupCompleted2" xml:space="preserve">
-    <value>Packing of group of mods {0} was completed successfully! For other informations, you can look into logfiles in the program folder.</value>
+    <value>Packing of group of mods {0} was completed successfully! More information can be found in the log, located in the program folder.</value>
   </data>
 </root>
