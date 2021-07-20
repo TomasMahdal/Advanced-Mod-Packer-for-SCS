@@ -118,16 +118,16 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="dialog_Cleanup" xml:space="preserve">
-    <value>Probíhá čistění cache...</value>
+    <value>Čistění cache...</value>
   </data>
   <data name="dialog_Copyiing" xml:space="preserve">
-    <value>Kopírování souborů módu...</value>
+    <value>Kopírování souborů...</value>
   </data>
   <data name="dialog_PackagingNonSteam" xml:space="preserve">
-    <value>Probíhá balení non Steam verze módu...</value>
+    <value>Balení neSteamové verze...</value>
   </data>
   <data name="dialog_PackagingSteam" xml:space="preserve">
-    <value>Probíhá balení Steam verze módu...</value>
+    <value>Balení Steamové verze...</value>
   </data>
   <data name="ErrorInPackingNonSteam" xml:space="preserve">
     <value>Chyba při vytváření neSteamové verze</value>
@@ -139,7 +139,7 @@
     <value>Složka uvedená v templatu neexistuje!</value>
   </data>
   <data name="ManifestNotFound" xml:space="preserve">
-    <value>Manifest nebyl nazelen! Mód nemusí fungovat správně.</value>
+    <value>Manifest nebyl nazelen! Mod nemusí fungovat správně.</value>
   </data>
   <data name="NotFound" xml:space="preserve">
     <value>nenalezena</value>
@@ -148,15 +148,15 @@
     <value>Balení...</value>
   </data>
   <data name="PackagingGroupCompleted" xml:space="preserve">
-    <value>Zabalení skupiny módů proběhlo úspěšně!</value>
+    <value>Zabalení skupiny modů proběhlo úspěšně!</value>
   </data>
   <data name="PackingCompleted" xml:space="preserve">
-    <value>Zabalení módu probehlo úspěšně!</value>
+    <value>Zabalení modu proběhlo úspěšně!</value>
   </data>
   <data name="PackingCompleted2" xml:space="preserve">
-    <value>Zabalení módu {0} proběhlo úspěšně! Pro více informací můžete prohlédnout log ve složce s programem.</value>
+    <value>Zabalení módu {0} proběhlo úspěšně! Podrobnosti najdeš v logu, který je ve složce s programem.</value>
   </data>
   <data name="PackingGroupCompleted2" xml:space="preserve">
-    <value>Zabalení skupiny módů {0} proběhlo úspěšně! Pro více informací můžete prohlédnout log ve složce s programem.</value>
+    <value>Zabalení skupiny módů {0} proběhlo úspěšně! Podrobnosti najdeš v logu, který je ve složce s programem.</value>
   </data>
 </root>
