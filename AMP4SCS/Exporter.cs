@@ -61,6 +61,11 @@ namespace AdvancedETS2Packer
                             {
                                 templates.RemoveAt(i);
                             }
+
+                            if (!templates[i].Contains("\r\nname=\""))
+                            {
+                                templates.RemoveAt(i);
+                            }
                         }
 
                         // load templates
