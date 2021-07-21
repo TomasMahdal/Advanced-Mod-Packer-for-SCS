@@ -7,23 +7,55 @@ using System.Windows.Forms;
 
 namespace AdvancedETS2Packer
 {
+    /// <summary>
+    /// To this class, Exporter loads templates. It has all atributtes that template could have.
+    /// </summary>
     class Template
     {
+        /// <summary>
+        /// Name of mod
+        /// </summary>
         public string Name { get; set; }
+
+        /// <summary>
+        /// Group of which the mode is a member
+        /// </summary>
         public string Group { get; set; }
 
+        /// <summary>
+        /// Name of zip file
+        /// </summary>
         public string ZipName { get; set; }
 
+        /// <summary>
+        /// Path, where will app export Steam version of mod.
+        /// </summary>
         public string SteamPath { get; set; }
+
+        /// <summary>
+        /// Path, where will app export non Steam version of mod.
+        /// </summary>
         public string NonSteamPath { get; set; }
 
+        /// <summary>
+        /// In non Steam version, manifest must contain some strings... This is it, it copies itself to manifest.
+        /// </summary>
         public string Include_in_manifest { get; set; }
+
+        /// <summary>
+        /// Where can Include_in_manifest add string?
+        /// </summary>
+        /// <remarks>Most of time, it is #, or other char.</remarks>
         public string Include_at { get; set; }
 
         public List<string> CopyPaths = new List<string>();
 
         public bool Error { get; set; }
 
+        /// <summary>
+        /// This method load all parameters of template from string.
+        /// </summary>
+        /// <param name="content">String with parameters of template.</param>
         // create object from string
         public void LoadFromString(string content)
         {

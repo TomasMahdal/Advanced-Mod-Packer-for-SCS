@@ -15,6 +15,9 @@ namespace AdvancedETS2Packer
     {
         ResourceManager LocRM { get; set; }
 
+        /// <summary>
+        /// This method loads transaltions for this form.
+        /// </summary>
         public PackingDialog()
         {
             InitializeComponent();
@@ -24,6 +27,11 @@ namespace AdvancedETS2Packer
             lblPackaging.Text = LocRM.GetString("Packaging...");
         }
 
+        /// <summary>
+        /// This method is updating status on label on form.
+        /// </summary>
+        /// <remarks>It using Invoke, so this method can be called from another thread.</remarks>
+        /// <param name="status">Status string, that will be displayed on form.</param>
         public void UpdateStatus(string status)
         {
             Invoke((MethodInvoker)delegate

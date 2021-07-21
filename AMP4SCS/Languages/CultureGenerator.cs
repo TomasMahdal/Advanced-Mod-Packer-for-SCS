@@ -6,8 +6,14 @@ using System.Threading.Tasks;
 
 namespace AdvancedETS2Packer.Languages
 {
+    /// <summary>
+    /// This class is used for generating culture for translations
+    /// </summary>
     public class CultureGenerator
     {
+        /// <summary>
+        /// This method set culture for thread by language, which is set in properties
+        /// </summary>
         // method, that set CultureInfo from properties (selected language)
         public static void SetCultureFromProperties()
         {

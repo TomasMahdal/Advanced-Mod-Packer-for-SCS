@@ -20,6 +20,12 @@ namespace AdvancedETS2Packer
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Initialize form
+        /// </summary>
+        /// <remarks>
+        /// When is form showed, it run this function, which load version info and text into richtextbox.
+        /// </remarks>
         private void About_Load(object sender, EventArgs e)
         {
             lblVersion.Text = "version: " + Assembly.GetExecutingAssembly().GetName().Version.ToString();
@@ -31,8 +37,12 @@ namespace AdvancedETS2Packer
             txtAbout.Text = about;
         }
 
+        /// <summary>
+        /// When user click on link in richtextbox, then open it in web browser.
+        /// </summary>
         private void txtAbout_LinkClicked(object sender, LinkClickedEventArgs e)
         {
+            // this is used here, because if you give link directly to Proccess.Start(), it throws error for no reason
             var ps = new ProcessStartInfo(e.LinkText)
             {
                 UseShellExecute = true,

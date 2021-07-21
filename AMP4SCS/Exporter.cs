@@ -13,11 +13,17 @@ using System.Threading;
 
 namespace AdvancedETS2Packer
 {
+    /// <summary>
+    /// This class is responsible for loading and exporting templates
+    /// </summary>
     class Exporter
     {
         public List<Template> Templates { get; set; }
         private ResourceManager LocRM;
 
+        /// <summary>
+        /// It loads translations for exporter and it loads templates from directory.
+        /// </summary>
         // init class and load templates
         public Exporter()
         {
@@ -77,6 +83,11 @@ namespace AdvancedETS2Packer
             }
         }
 
+        /// <summary>
+        /// It pack mod and copy it to selected location (location in template)
+        /// </summary>
+        /// <param name="templateName">Name of template from which this method reads other informations, like path, name, ...</param>
+        /// <param name="silentPackaging">If is silent packaging active, user does not see any success dialog boxes, it is used when user is packing whole group.</param>
         public void ExportMod(string templateName, bool silentPackaging = false)
         {
             // display information about packing
@@ -162,7 +173,7 @@ namespace AdvancedETS2Packer
                             MessageBox.Show(LocRM.GetString("ManifestNotFound"), LocRM.GetString("ErrorInPackingNonSteam"), MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         }
 
-                        // vygeneruje bat soubor s příkazy pro export
+                        // generate bat file with commands for export
                         Assembly assembly = Assembly.GetExecutingAssembly();
                         StreamReader reader = new StreamReader(assembly.GetManifestResourceStream("AdvancedETS2Packer.templateExportBat.txt"));
                         string bat = reader.ReadToEnd();
@@ -201,6 +212,13 @@ namespace AdvancedETS2Packer
             pd.ShowDialog();
         }
 
+        /// <summary>
+        /// Pack group of mods
+        /// </summary>
+        /// <param name="groupName">Name of group, which will be packet.</param>
+        /// <remarks>
+        /// It selects ale templates with selected groupName and individually export (pack) them.
+        /// </remarks>
         public void ExportGroup(string groupName)
         {
             foreach(Template temp in Templates)
@@ -214,6 +232,13 @@ namespace AdvancedETS2Packer
             MessageBox.Show(string.Format(LocRM.GetString("PackingGroupCompleted2"), groupName), LocRM.GetString("PackingGroupCompleted"), MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
+        /// <summary>
+        /// This function is used to copy whole directory with it content
+        /// </summary>
+        /// <param name="sourceDirName">Path to source directory to copy.</param>
+        /// <param name="destDirName">Path, where will be source directory copied.</param>
+        /// <param name="copySubDirs">Do you want copy recursively?</param>
+        // https://docs.microsoft.com/cs-cz/dotnet/standard/io/how-to-copy-directories
         private static void DirectoryCopy(string sourceDirName, string destDirName, bool copySubDirs)
         {
             // Get the subdirectories for the specified directory.
@@ -250,23 +275,10 @@ namespace AdvancedETS2Packer
             }
         }
 
-        private static string RemoveDiacritics(string text)
-        {
-            var normalizedString = text.Normalize(NormalizationForm.FormD);
-            var stringBuilder = new StringBuilder();
-
-            foreach (var c in normalizedString)
-            {
-                var unicodeCategory = CharUnicodeInfo.GetUnicodeCategory(c);
-                if (unicodeCategory != UnicodeCategory.NonSpacingMark)
-                {
-                    stringBuilder.Append(c);
-                }
-            }
-
-            return stringBuilder.ToString().Normalize(NormalizationForm.FormC);
-        }
-
+        /// <summary>
+        /// This method delete logs, it they exists
+        /// </summary>
+        /// <remarks>It is used when packing of new mod start. So that 7zip write log to empty file.</remarks>
         public void ClearLogs()
         {
             // remove Steam logs

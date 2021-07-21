@@ -118,7 +118,7 @@ namespace AdvancedETS2Packer
             this.lblNastaveni.TabIndex = 2;
             this.lblNastaveni.TabStop = true;
             this.lblNastaveni.Text = "Nastavení";
-            this.lblNastaveni.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            this.lblNastaveni.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.optionsLabel_LinkClicked);
             // 
             // lblAbout
             // 

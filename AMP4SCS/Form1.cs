@@ -16,6 +16,10 @@ namespace AdvancedETS2Packer
     {
         private Exporter exporter = new Exporter();
 
+        /// <summary>
+        /// It loads language and verify, if settings of app exists.
+        /// </summary>
+        /// <remarks>It settings does not exist, then load Options dialog to make sure, that user add his options (7zip path, language, ...)</remarks>
         public Form1()
         {
             // set language
@@ -42,6 +46,9 @@ namespace AdvancedETS2Packer
             UpdateFormLanguage();
         }
 
+        /// <summary>
+        /// It fills lisbox on form with templates (mods or groups)
+        /// </summary>
         private void Form1_Load(object sender, EventArgs e)
         {
             // load mods and groups
@@ -71,6 +78,9 @@ namespace AdvancedETS2Packer
             }
         }
 
+        /// <summary>
+        /// Click on this button start export of mod.
+        /// </summary>
         private void btnMods_Click(object sender, EventArgs e)
         {
             if (listbox_mods.SelectedItem != null)
@@ -80,6 +90,9 @@ namespace AdvancedETS2Packer
             }
         }
 
+        /// <summary>
+        /// Click on this button start export of group.
+        /// </summary>
         private void btnGroups_Click(object sender, EventArgs e)
         {
             if (listbox_mods_groups.SelectedItem != null)
@@ -89,13 +102,19 @@ namespace AdvancedETS2Packer
             }
         }
 
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        /// <summary>
+        /// Open Options dialog and update language.
+        /// </summary>
+        private void optionsLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Options options = new Options();
             options.ShowDialog();
             UpdateFormLanguage();
         }
 
+        /// <summary>
+        /// It loads translated string to form.
+        /// </summary>
         private void UpdateFormLanguage()
         {
             // load translations
@@ -108,6 +127,9 @@ namespace AdvancedETS2Packer
             lblAbout.Text = LocRM.GetString("About");
         }
 
+        /// <summary>
+        /// Open about, when user click on about link.
+        /// </summary>
         private void lblAbout_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             About about = new About();

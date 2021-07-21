@@ -13,6 +13,9 @@ namespace AdvancedETS2Packer
 {
     public partial class Options : Form
     {
+        /// <summary>
+        /// It loads languages and loads settings into form.
+        /// </summary>
         public Options()
         {
             InitializeComponent();
@@ -40,6 +43,10 @@ namespace AdvancedETS2Packer
             btnSave.Text = LocRM.GetString("Save");
         }
 
+        /// <summary>
+        /// This method save settings.
+        /// </summary>
+        /// <remarks>Save user settings, set selected language as current language and close form.</remarks>
         private void btnSave_Click(object sender, EventArgs e)
         {
             // save settings
@@ -54,11 +61,17 @@ namespace AdvancedETS2Packer
             this.Close();
         }
 
+        /// <summary>
+        /// This method only close form. It does not save anything.
+        /// </summary>
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
+        /// <summary>
+        /// This method is for selecting 7zip executable by OpenFileDialog.
+        /// </summary>
         private void btnSelect7zip_Click(object sender, EventArgs e)
         {
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
