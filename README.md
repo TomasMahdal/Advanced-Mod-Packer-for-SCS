@@ -2,7 +2,7 @@
 
 *Currectly supported games: ETS2 and ATS, v1.37 and newer.*
 
-This tool aims to automate the final steps before you publish your mod. It can pack both Steam Workshop and non-Steam Workshop variants. You can pack a single mod or you can specify a group of mods that will be packed in one go, but will still remain as separate mods. You can also pack a group of mods into a single package. When packing, it uses two passes to cut down the package size while allowing you to pack sounds, which cannot be compressed.
+This tool aims to automate the final steps before you publish your mod. It can pack both Steam Workshop and non-Steam Workshop variants. You can pack a single mod or you can specify a group of mods that will be packed in one go, but will still remain as separate mods. You can also pack a group of mods into a single package. When packing, it uses two passes to cut down the package size while allowing you to pack sounds, which cannot be compressed. It has been built on Smarty's compression script and made mode user-friendly.
 
 ## Requirements:
 * [.NET 5.0](https://dotnet.microsoft.com/download/dotnet/5.0)
