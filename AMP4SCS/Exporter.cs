@@ -37,12 +37,12 @@ namespace AdvancedETS2Packer
                 foreach (var file in d.GetFiles("*.txt"))
                 {
                     // load template string from file
-                    string content = File.ReadAllText(file.FullName, Encoding.UTF8);
+                    string content = "\r\n" + File.ReadAllText(file.FullName, Encoding.UTF8);
 
                     // verify, if it is template
-                    if (content.Contains("[pack_thingamajig]")) { 
+                    if (content.Contains("\r\n[pack_thingamajig]")) { 
                         // split it to more templates, if are there more templates in file
-                        List<string> templates = content.Split("[pack_thingamajig]").ToList();
+                        List<string> templates = content.Split("\r\n[pack_thingamajig]").ToList();
 
                         // clean empty templates
                         for (int i = templates.Count - 1; i > -1; i--)
