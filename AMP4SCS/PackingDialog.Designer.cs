@@ -64,6 +64,7 @@ namespace AdvancedETS2Packer
             this.Controls.Add(this.lblPackaging);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "PackingDialog";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = " ";
             this.ResumeLayout(false);
             this.PerformLayout();
