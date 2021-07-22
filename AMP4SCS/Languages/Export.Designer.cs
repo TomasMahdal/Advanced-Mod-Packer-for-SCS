@@ -79,7 +79,7 @@ namespace AdvancedETS2Packer.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Packaging non Steam version of mod....
+        ///   Looks up a localized string similar to Working on the non-Steam version....
         /// </summary>
         internal static string dialog_PackagingNonSteam {
             get {
@@ -88,7 +88,7 @@ namespace AdvancedETS2Packer.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Packaging Steam version of mod....
+        ///   Looks up a localized string similar to Working on the Steam version....
         /// </summary>
         internal static string dialog_PackagingSteam {
             get {
@@ -97,7 +97,7 @@ namespace AdvancedETS2Packer.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Error in packing non-Steam version..
+        ///   Looks up a localized string similar to Error in packing the non-Steam version..
         /// </summary>
         internal static string ErrorInPackingNonSteam {
             get {
@@ -115,7 +115,7 @@ namespace AdvancedETS2Packer.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Folder mentioned in the template does not exists!.
+        ///   Looks up a localized string similar to Folder mentioned in the template does not exist!.
         /// </summary>
         internal static string FolderInTemplateNotExists {
             get {
@@ -142,7 +142,16 @@ namespace AdvancedETS2Packer.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Packaging....
+        ///   Looks up a localized string similar to Package of mod {0} will be empty, because it doesn&apos;t have any paths to source files..
+        /// </summary>
+        internal static string PackageWillBeEmpty {
+            get {
+                return ResourceManager.GetString("PackageWillBeEmpty", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Packing....
         /// </summary>
         internal static string Packaging___ {
             get {
@@ -160,7 +169,7 @@ namespace AdvancedETS2Packer.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Packing of mod {0} was completed successfully! For other informations, you can look into logfiles in the program folder..
+        ///   Looks up a localized string similar to Packing of mod {0} was completed successfully! More information can be found in the log, located in the program folder..
         /// </summary>
         internal static string PackingCompleted2 {
             get {
@@ -178,11 +187,20 @@ namespace AdvancedETS2Packer.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Packing of group of mods {0} was completed successfully! For other informations, you can look into logfiles in the program folder..
+        ///   Looks up a localized string similar to Packing of group of mods {0} was completed successfully! More information can be found in the log, located in the program folder..
         /// </summary>
         internal static string PackingGroupCompleted2 {
             get {
                 return ResourceManager.GetString("PackingGroupCompleted2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Problem with packing of mod.
+        /// </summary>
+        internal static string ProblemWithPackaging {
+            get {
+                return ResourceManager.GetString("ProblemWithPackaging", resourceCulture);
             }
         }
     }

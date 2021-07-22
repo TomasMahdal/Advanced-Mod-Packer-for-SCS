@@ -144,6 +144,9 @@
   <data name="NotFound" xml:space="preserve">
     <value>not found</value>
   </data>
+  <data name="PackageWillBeEmpty" xml:space="preserve">
+    <value>Package of mod {0} will be empty, because it doesn't have any paths to source files.</value>
+  </data>
   <data name="Packaging..." xml:space="preserve">
     <value>Packing...</value>
   </data>
@@ -158,5 +161,8 @@
   </data>
   <data name="PackingGroupCompleted2" xml:space="preserve">
     <value>Packing of group of mods {0} was completed successfully! More information can be found in the log, located in the program folder.</value>
+  </data>
+  <data name="ProblemWithPackaging" xml:space="preserve">
+    <value>Problem with packing of mod</value>
   </data>
 </root>

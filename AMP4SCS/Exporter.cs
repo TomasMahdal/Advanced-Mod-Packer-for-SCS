@@ -98,6 +98,8 @@ namespace AdvancedETS2Packer
             // display information about packing
             PackingDialog pd = new PackingDialog();
 
+            // if there is no path, then inform user, that tool will pack nothing
+            MessageBox.Show(string.Format(LocRM.GetString("PackageWillBeEmpty"), templateName), LocRM.GetString("ProblemWithPackaging"), MessageBoxButtons.OK, MessageBoxIcon.Warning);
             new Thread(() =>
             {
                 // clear folder

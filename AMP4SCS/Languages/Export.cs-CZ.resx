@@ -144,6 +144,9 @@
   <data name="NotFound" xml:space="preserve">
     <value>nenalezena</value>
   </data>
+  <data name="PackageWillBeEmpty" xml:space="preserve">
+    <value>Balíček módu {0} bude prázdný, protože nebyla zadána cesta ke zdrojovým souborům!</value>
+  </data>
   <data name="Packaging..." xml:space="preserve">
     <value>Balení...</value>
   </data>
@@ -158,5 +161,8 @@
   </data>
   <data name="PackingGroupCompleted2" xml:space="preserve">
     <value>Zabalení skupiny módů {0} proběhlo úspěšně! Podrobnosti najdeš v logu, který je ve složce s programem.</value>
+  </data>
+  <data name="ProblemWithPackaging" xml:space="preserve">
+    <value>Problém při balení módu</value>
   </data>
 </root>
