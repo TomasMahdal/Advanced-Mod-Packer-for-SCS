@@ -34,10 +34,12 @@ namespace AdvancedETS2Packer
         /// <param name="status">Status string, that will be displayed on form.</param>
         public void UpdateStatus(string status)
         {
-            Invoke((MethodInvoker)delegate
-            {
-                lblStatus.Text = LocRM.GetString(status);
-            });
+            if (this.IsHandleCreated) {
+                Invoke((MethodInvoker)delegate
+                {
+                    lblStatus.Text = LocRM.GetString(status);
+                });
+            }
         }
     }
 }

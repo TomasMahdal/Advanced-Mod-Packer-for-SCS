@@ -6,6 +6,7 @@
     <UseWindowsForms>true</UseWindowsForms>
     <AssemblyName>AdvancedModPackerforSCSGames</AssemblyName>
     <RootNamespace>AdvancedETS2Packer</RootNamespace>
+    <Version>1.0.2</Version>
   </PropertyGroup>
 
   <ItemGroup>
