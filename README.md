@@ -21,7 +21,7 @@ zip_name="bollore_bluebus_40"
 path1="S:\Docs\Euro Truck Simulator 2\mod\Bluebus"
 path2="S:\Docs\Euro Truck Simulator 2\mod\Bluebus_def"
 steam_path="S:\Docs\Euro Truck Simulator 2\mod_released\a_Steam\Bollore_Bluebus_s"
-nosteam_path="S:\Docs\Euro Truck Simulator 2\mod_released\a_Trucky\Bollore_Bluebus"
+nosteam_path="S:\Docs\Euro Truck Simulator 2\mod_released\a_TMP\Bollore_Bluebus"
 
 [include_in_manifest]
 compatible_versions[]: "1.41.*"
