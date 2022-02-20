@@ -33,7 +33,7 @@ include_at="#"
 
 </pre>
 
-`[pack_thingamajig]` tell the program this is a template<br>
+`[pack_thingamajig]` tells the program this is a template<br>
 `group=""` makes this mod part of a group<br>
 `name=""` mod name for the UI<br>
 `zip_name=""` name of the final .zip, Steam Workshop versions will have `_s` appended at the end of the name automatically<br>
