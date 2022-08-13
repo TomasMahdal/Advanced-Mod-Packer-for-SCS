@@ -35,7 +35,7 @@ include_at="#"
 
 `[pack_thingamajig]` tells the program this is a template<br>
 `group=""` makes this mod part of a group<br>
-`name=""` mod name for the UI<br>
+`name=""` mod name for the AMP UI<br>
 `zip_name=""` name of the final .zip, Steam Workshop versions will have `_s` appended at the end of the name automatically<br>
 `pathX=""`first path to your mod, where X is a number counting from 1, if no valid number is found, loop ends and program progresses<br>
 `steam_path=""` path where the final Steam Workhop package will be copied to, if invalid or empty package won't be created<br>
