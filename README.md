@@ -1,14 +1,14 @@
 # Advanced Mod Packer for SCS Games
 
-*Currectly supported games: ETS2 and ATS, v1.37 up to 1.49 including.*
+*Currectly supported games: ETS2 and ATS, v1.50+*
 
-This tool aims to automate the final steps before you publish your mod. It can pack both Steam Workshop and non-Steam Workshop variants. You can pack a single mod or you can specify a group of mods that will be packed in one go, but will still remain as separate mods. You can also pack a group of mods into a single package. When packing, it uses two passes to cut down the package size while allowing you to pack sounds, which cannot be compressed by default. It has been built on Smarty's compression script and made mode user-friendly.
+This tool aims to automate the final steps before you publish your mod. It can pack both Steam Workshop and non-Steam Workshop variants. You can pack a single mod or you can specify a group of mods that will be packed in one go, but will still remain as separate mods. You can also pack a group of mods into a single package.
 
 ![AMP4SCS' main menu](https://dl.dropboxusercontent.com/s/x2udhpfwmd44cnp/amp4scs.png?dl=0)
 
 ## Requirements:
-* [.NET 5.0](https://dotnet.microsoft.com/download/dotnet/5.0)
-* [7zip](https://www.7-zip.org/)
+* [.NET 8.0](https://dotnet.microsoft.com/download/dotnet/8.0)
+* [SCS Game Archive Packer](https://modding.scssoft.com/wiki/Documentation/Tools/Game_Archive_Packer)
 
 ## Usage
 
@@ -24,8 +24,8 @@ steam_path="S:\Docs\Euro Truck Simulator 2\mod_released\a_Steam\Bollore_Bluebus_
 nosteam_path="S:\Docs\Euro Truck Simulator 2\mod_released\a_TMP\Bollore_Bluebus"
 
 [include_in_manifest]
-compatible_versions[]: "1.41.*"
-  compatible_versions[]: "1.40.*"
+compatible_versions[]: "1.51.*"
+  compatible_versions[]: "1.50.*"
   display_name: "Bolloré Bluebus SE"
 [end]
 
