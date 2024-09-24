@@ -26,15 +26,15 @@ namespace AdvancedETS2Packer
             Languages.CultureGenerator.SetCultureFromProperties();
 
             // verify, if exists settings
-            if (Properties.Settings.Default.SevenZip_path == "" || File.Exists(Properties.Settings.Default.SevenZip_path) == false)
+            if (Properties.Settings.Default.SCSArchiverPath == "" || File.Exists(Properties.Settings.Default.SCSArchiverPath) == false)
             {
                 Options options = new Options();
                 options.ShowDialog();
 
                 // Was set? No? Then exit application!
-                if (Properties.Settings.Default.SevenZip_path == "")
+                if (Properties.Settings.Default.SCSArchiverPath == "")
                 {
-                    MessageBox.Show("7z not selected, app will close.", "7z not selected", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("SCS Archiver not selected, app will close.", "SCS Archiver not selected", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     Environment.Exit(0);
                 }
             }

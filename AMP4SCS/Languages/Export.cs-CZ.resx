@@ -112,10 +112,10 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="dialog_Cleanup" xml:space="preserve">
     <value>Čistění cache...</value>
@@ -150,19 +150,22 @@
   <data name="Packaging..." xml:space="preserve">
     <value>Balení...</value>
   </data>
-  <data name="PackagingGroupCompleted" xml:space="preserve">
-    <value>Zabalení skupiny modů proběhlo úspěšně!</value>
-  </data>
   <data name="PackingCompleted" xml:space="preserve">
     <value>Zabalení modu proběhlo úspěšně!</value>
   </data>
   <data name="PackingCompleted2" xml:space="preserve">
     <value>Zabalení módu {0} proběhlo úspěšně! Podrobnosti najdeš v logu, který je ve složce s programem.</value>
   </data>
+  <data name="PackingGroupCompleted" xml:space="preserve">
+    <value>Zabalení skupiny módů proběhlo úspěšně!</value>
+  </data>
   <data name="PackingGroupCompleted2" xml:space="preserve">
     <value>Zabalení skupiny módů {0} proběhlo úspěšně! Podrobnosti najdeš v logu, který je ve složce s programem.</value>
   </data>
   <data name="ProblemWithPackaging" xml:space="preserve">
     <value>Problém při balení módu</value>
+  </data>
+  <data name="PackagingGroupCompleted" xml:space="preserve">
+    <value>Zabalení skupiny modů proběhlo úspěšně!</value>
   </data>
 </root>

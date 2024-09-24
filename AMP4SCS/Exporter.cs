@@ -147,13 +147,13 @@ namespace AdvancedETS2Packer
                     // export of Steam version
                     if (Directory.Exists(template.SteamPath))
                     {
-                        // vygeneruje bat soubor s příkazy pro export
+                        // generate bat 
                         pd.UpdateStatus("dialog_PackagingSteam");
                         Assembly assembly = Assembly.GetExecutingAssembly();
                         StreamReader reader = new StreamReader(assembly.GetManifestResourceStream("AdvancedETS2Packer.templateExportBat.txt"));
                         string bat = reader.ReadToEnd();
                         bat = bat.Replace("%cache%", Environment.CurrentDirectory + "\\_cache\\data\\");
-                        bat = bat.Replace("%7z%", Properties.Settings.Default.SevenZip_path);
+                        bat = bat.Replace("%7z%", Properties.Settings.Default.SCSArchiverPath);
                         bat = bat.Replace("%export%", template.SteamPath + "\\" + template.ZipName + "_s.zip");
                         bat = bat.Replace("%modname%", template.Name);
                         bat = bat.Replace("%steam%", "");
@@ -187,9 +187,9 @@ namespace AdvancedETS2Packer
                         Assembly assembly = Assembly.GetExecutingAssembly();
                         StreamReader reader = new StreamReader(assembly.GetManifestResourceStream("AdvancedETS2Packer.templateExportBat.txt"));
                         string bat = reader.ReadToEnd();
-                        bat = bat.Replace("%cache%", Environment.CurrentDirectory + "\\_cache\\data\\");
-                        bat = bat.Replace("%7z%", Properties.Settings.Default.SevenZip_path);
-                        bat = bat.Replace("%export%", template.NonSteamPath + "\\" + template.ZipName + ".zip");
+                        bat = bat.Replace("%cache%", Environment.CurrentDirectory + "\\_cache\\");
+                        bat = bat.Replace("%packer%", Properties.Settings.Default.SCSArchiverPath);
+                        bat = bat.Replace("%export%", template.NonSteamPath + "\\" + template.ZipName + ".scs");
                         bat = bat.Replace("%modname%", template.Name);
                         bat = bat.Replace("%steam%", "non ");
                         bat = bat.Replace("%logpath%", Environment.CurrentDirectory + "\\log_nonSteam.txt");

@@ -21,13 +21,14 @@ namespace AdvancedETS2Packer
             InitializeComponent();
 
             // load settings
-            txt7Zip.Text = Properties.Settings.Default.SevenZip_path;
+            txtArchiver.Text = Properties.Settings.Default.SCSArchiverPath;
 
             if (Properties.Settings.Default.Language < 0)
             {
                 // default is english
                 cmbBoxLang.SelectedIndex = 0;
-            } else
+            }
+            else
             {
                 // select selected language
                 cmbBoxLang.SelectedIndex = Properties.Settings.Default.Language;
@@ -38,7 +39,7 @@ namespace AdvancedETS2Packer
             groupBox1.Text = LocRM.GetString("language");
             lblJazykAplikace.Text = LocRM.GetString("languageOfApp");
 
-            label1.Text = LocRM.GetString("PathToConsole7zip");
+            label1.Text = LocRM.GetString("PathToArchiver");
             btnClose.Text = LocRM.GetString("Close");
             btnSave.Text = LocRM.GetString("Save");
         }
@@ -50,7 +51,7 @@ namespace AdvancedETS2Packer
         private void btnSave_Click(object sender, EventArgs e)
         {
             // save settings
-            Properties.Settings.Default.SevenZip_path = txt7Zip.Text;
+            Properties.Settings.Default.SCSArchiverPath = txtArchiver.Text;
             Properties.Settings.Default.Language = cmbBoxLang.SelectedIndex;
             Properties.Settings.Default.Save();
 
@@ -70,13 +71,13 @@ namespace AdvancedETS2Packer
         }
 
         /// <summary>
-        /// This method is for selecting 7zip executable by OpenFileDialog.
+        /// This method is for selecting Archiver executable by OpenFileDialog.
         /// </summary>
-        private void btnSelect7zip_Click(object sender, EventArgs e)
+        private void btnSelectArchiver_Click(object sender, EventArgs e)
         {
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                txt7Zip.Text = openFileDialog1.FileName;
+                txtArchiver.Text = openFileDialog1.FileName;
             }
         }
     }
