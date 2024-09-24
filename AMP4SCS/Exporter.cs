@@ -152,8 +152,8 @@ namespace AdvancedETS2Packer
                         Assembly assembly = Assembly.GetExecutingAssembly();
                         StreamReader reader = new StreamReader(assembly.GetManifestResourceStream("AdvancedETS2Packer.templateExportBat.txt"));
                         string bat = reader.ReadToEnd();
-                        bat = bat.Replace("%cache%", Environment.CurrentDirectory + "\\_cache\\data\\");
-                        bat = bat.Replace("%7z%", Properties.Settings.Default.SCSArchiverPath);
+                        bat = bat.Replace("%cache%", Environment.CurrentDirectory + "\\_cache\\");
+                        bat = bat.Replace("%packer%", Properties.Settings.Default.SCSArchiverPath);
                         bat = bat.Replace("%export%", template.SteamPath + "\\" + template.ZipName + "_s.zip");
                         bat = bat.Replace("%modname%", template.Name);
                         bat = bat.Replace("%steam%", "");
