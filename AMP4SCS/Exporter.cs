@@ -210,7 +210,7 @@ namespace AdvancedETS2Packer
 
                     // close "Packing..." dialog
                     if (pd.Visible) {
-                        pd.Invoke((MethodInvoker)delegate
+                        pd.Invoke((System.Windows.Forms.MethodInvoker)delegate
                         {
                             pd.Close();
                         });
