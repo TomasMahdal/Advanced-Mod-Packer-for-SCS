@@ -154,7 +154,7 @@ namespace AdvancedETS2Packer
                         string bat = reader.ReadToEnd();
                         bat = bat.Replace("%cache%", Environment.CurrentDirectory + "\\_cache\\");
                         bat = bat.Replace("%packer%", Properties.Settings.Default.SCSArchiverPath);
-                        bat = bat.Replace("%export%", template.SteamPath + "\\" + template.ZipName + "_s.zip");
+                        bat = bat.Replace("%export%", template.SteamPath + "\\" + template.ZipName + "_s.scs");
                         bat = bat.Replace("%modname%", template.Name);
                         bat = bat.Replace("%steam%", "");
                         bat = bat.Replace("%logpath%", Environment.CurrentDirectory + "\\log_Steam.txt");
