@@ -19,7 +19,7 @@ namespace AdvancedETS2Packer.Languages {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Options {
@@ -79,7 +79,7 @@ namespace AdvancedETS2Packer.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Language of application:.
+        ///   Looks up a localized string similar to Application language:.
         /// </summary>
         internal static string languageOfApp {
             get {
@@ -88,11 +88,11 @@ namespace AdvancedETS2Packer.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Path to console version of 7zip:.
+        ///   Looks up a localized string similar to Path to the SCS Packer:.
         /// </summary>
-        internal static string PathToConsole7zip {
+        internal static string PathToArchiver {
             get {
-                return ResourceManager.GetString("PathToConsole7zip", resourceCulture);
+                return ResourceManager.GetString("PathToArchiver", resourceCulture);
             }
         }
         

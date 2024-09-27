@@ -1,24 +1,20 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net5.0-windows</TargetFramework>
+    <TargetFramework>net8.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <AssemblyName>AdvancedModPackerforSCSGames</AssemblyName>
     <RootNamespace>AdvancedETS2Packer</RootNamespace>
-    <Version>1.0.2</Version>
+    <Version>2.0.0</Version>
   </PropertyGroup>
-
   <ItemGroup>
     <None Remove="about.txt" />
     <None Remove="templateExportBat.txt" />
   </ItemGroup>
-
   <ItemGroup>
     <EmbeddedResource Include="about.txt" />
     <EmbeddedResource Include="templateExportBat.txt" />
   </ItemGroup>
-
   <ItemGroup>
     <Compile Update="Languages\Export.Designer.cs">
       <DesignTime>True</DesignTime>
@@ -41,7 +37,6 @@
       <DependentUpon>Form1.resx</DependentUpon>
     </Compile>
   </ItemGroup>
-
   <ItemGroup>
     <EmbeddedResource Update="Languages\Export.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -56,12 +51,10 @@
       <LastGenOutput>Form1.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
-
   <ItemGroup>
     <None Update="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
-
 </Project>

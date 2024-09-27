@@ -29,46 +29,46 @@ namespace AdvancedETS2Packer
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblPackaging = new System.Windows.Forms.Label();
-            this.lblStatus = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+            lblPackaging = new System.Windows.Forms.Label();
+            lblStatus = new System.Windows.Forms.Label();
+            SuspendLayout();
             // 
             // lblPackaging
             // 
-            this.lblPackaging.AutoSize = true;
-            this.lblPackaging.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblPackaging.Location = new System.Drawing.Point(96, 9);
-            this.lblPackaging.Name = "lblPackaging";
-            this.lblPackaging.Size = new System.Drawing.Size(132, 30);
-            this.lblPackaging.TabIndex = 0;
-            this.lblPackaging.Text = "Packaging...";
-            this.lblPackaging.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            lblPackaging.AutoSize = true;
+            lblPackaging.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
+            lblPackaging.Location = new System.Drawing.Point(110, 12);
+            lblPackaging.Name = "lblPackaging";
+            lblPackaging.Size = new System.Drawing.Size(170, 37);
+            lblPackaging.TabIndex = 0;
+            lblPackaging.Text = "Packaging...";
+            lblPackaging.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblStatus
             // 
-            this.lblStatus.AutoSize = true;
-            this.lblStatus.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.lblStatus.Location = new System.Drawing.Point(0, 63);
-            this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(145, 15);
-            this.lblStatus.TabIndex = 1;
-            this.lblStatus.Text = "Now packaging mod \"{0}\"";
+            lblStatus.AutoSize = true;
+            lblStatus.Dock = System.Windows.Forms.DockStyle.Bottom;
+            lblStatus.Location = new System.Drawing.Point(0, 83);
+            lblStatus.Name = "lblStatus";
+            lblStatus.Size = new System.Drawing.Size(182, 20);
+            lblStatus.TabIndex = 1;
+            lblStatus.Text = "Now packaging mod \"{0}\"";
             // 
             // PackingDialog
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(331, 78);
-            this.ControlBox = false;
-            this.Controls.Add(this.lblStatus);
-            this.Controls.Add(this.lblPackaging);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Name = "PackingDialog";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = " ";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(378, 103);
+            ControlBox = false;
+            Controls.Add(lblStatus);
+            Controls.Add(lblPackaging);
+            FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            Name = "PackingDialog";
+            StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            Text = " ";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
